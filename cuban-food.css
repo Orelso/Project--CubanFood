@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Shizuru&display=swap');
+
+
+body{
+  background-color: #eee;
+  font-family: "avenir next", sans-serif;
+}
+
+h2{}
+                            /* MAY NOT NEED THIS */
+#page-wrapper{
+  position: relative;
+}
+                            /* click-able links */
+a {
+  color: #03189E;
+  text-decoration: underline;
+}
+
+li {
+  list-style: none;
+}
+                          /* main dishes section */
+dt{
+  text-transform: uppercase;
+}
+
+fieldset{
+  border: 2px solid #9E9503;
+}
+                        /* the entire page contains this code */
+.container{
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+#big{
+  font-size: 40px;
+  position: center;
+  font-family: "herculanum";
+}
+
+h2{
+  font-family: "herculanum"
+}
+                          /* button CSS */
+.btn{
+  padding: 0 20px;
+  height: 40px;
+  font-size: 1em;
+  font-weight: 900;
+  text-transform: uppercase;
+  border: 3px black solid;
+  border-radius: 2px;
+  background: transparent;
+  cursor: grabbing;
+}
+                          /* MAY NOT NEED THIS */
+.grid{
+  display: flex;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  min-height: 75px;
+  padding: 0px 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #eee;
+}
+
+                                  /* logo section */
+.logo {
+  width: 50vw;
+}
+
+@media (max-width: 650px) {
+  .logo {
+    margin-top: 15px;
+    width: 100%;
+    position: relative;
+  }
+}
+
+.logo > img {
+  width: 100%;
+  height: 100%;
+  max-width: 100px;
+  display: flex;
+  justify-content: center;
+
+  margin-left: 20px;
+}
+
+@media (max-width: 650px) {
+  .logo > img {
+    margin: 0 auto;
+  }
+}
+                            /* changes the nav section */
+nav {
+  font-weight: 400;
+}
+                            /* If screen goes under 650px then this happens */
+@media (max-width: 650px) {
+  nav {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 90px;
+  }
+                            /* follows the first @media query. So when the screen falls under 650px then this happens */
+nav li {
+    padding-bottom: 5px;
+  }
+}
+                            /* follows the first @media query. So when the screen falls under 650px then this happens */
+nav > ul {
+  width: 35vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.nav-link{
+  margin-top: 100%;
+}
+                            /* first section of the html email/submit button*/
+#hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 200px;
+  margin-top: 60px;
+  margin-left: 6%;
+}
+
+#hero > h2 {
+  margin-bottom: 20px;
+  word-wrap: break-word;
+}
+
+#hero input[type='email'] {
+  max-width: 275px;
+  width: 100%;
+  padding: 5px;
+}
+
+#hero input[type='submit'] {
+  max-width: 150px;
+  width: 100%;
+  height: 30px;
+  margin: 15px 0;
+  border: 0;
+  background-color: #f1c40f;
+}
+
+#hero input[type='submit']:hover {
+  background-color: #9E9503;
+  transition: background-color 3s;
+}
+
+@media (max-width: 650px) {
+  #hero {
+    margin-top: 120px;
+  }
+}
+                        /* font awesome images */
+#cuban-dishes {
+  margin-top: 30px;
+}
+
+#cuban-dishes .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 125px;
+  width: 20vw;
+  color: darkorange;
+  margin-right: 30px;
+  margin-left: -90px;
+}
+
+@media (max-width: 650px) {
+  #cuban-dishes .icon {
+    display: none;
+  }
+}
+
+
+@media (max-width: 650px) {
+  #cuban-dishes {
+    margin-top: 0;
+  }
+}
+                            /* Video */
+#vid {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+  }
+                            /* pricing section */
+#pricing {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: calc(100% / 3);
+  margin: 10px;
+  border: 4px solid #ED9206;
+  border-radius: 3px;
+}
+
+.product > .special {
+  background-color: #ED9206;
+  color: black;
+  padding: 15px 0;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-family: "chalkboard SE";
+}
+
+.product > h2 {
+  margin-top: 15px;
+}
+
+.product > ol {
+  margin-right: 10%;
+}
+
+.product > ol > li {
+  padding: 0px 0;
+}
+
+.product > button {
+  border: 0;
+  margin: 15px 0;
+  background-color: #f1c40f;
+  font-weight: 400;
+}
+
+.product > button:hover {
+  background-color: #ED9206;
+  transition: background-color 1s;
+}
+                      /* for special 3 */
+#bro{
+  margin-top: -2%;
+}
+
+@media (max-width: 800px) {
+  #pricing {
+    flex-direction: column;
+  }
+  .product {
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+}
+
+footer {
+  margin-top: 20px;
+  background-color: #ddd;
+  padding: 10px;
+  width: 100%;
+}
